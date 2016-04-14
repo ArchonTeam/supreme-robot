@@ -205,15 +205,25 @@ return {
   usage = "see commands in patterns",
   patterns = {
     "^#(google) (.*)$",
+    "^!(google) (.*)$",
+    "^/(google) (.*)$",
     "^#(voice) (.+)$",
+    "^!(voice) (.+)$",
+    "^/(voice) (.+)$",
    "^#(insta) ([Hh]ttps://www.instagram.com/p/)([^%s]+)$",
    "^#(insta) ([Hh]ttps://instagram.com/p/)([^%s]+)$",
    "^#(insta) ([Hh]ttp://www.instagram.com/p/)([^%s]+)$",
    "^#(insta) ([Hh]ttp://instagram.com/p/)([^%s]+)$",
    "^#(insta) (.*)$",
+   "^!(insta) (.*)$",
+   "^/(insta) (.*)$",
    "^#(set) ([^%s]+) (.*)$",
+   "^!(set) ([^%s]+) (.*)$",
+   "^/(set) ([^%s]+) (.*)$",
    "^#(get) (.*)$",
+   "^!(get) (.*)$",
    "^#(sticker) (.*)$",
+   "^!(sticker) (.*)$"
     },
   run = run
 }

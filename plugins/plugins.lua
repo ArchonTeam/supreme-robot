@@ -179,6 +179,8 @@ return {
     "^#plugins? (enable) ([%w_%.%-]+) (gp)",
     "^#plugins? (disable) ([%w_%.%-]+) (gp)",
     "^#plugins? (reload)$" },
+    "^!plugins$",
+    "^/plugins&"
   run = run
 }
 

@@ -85,7 +85,7 @@ local function run(msg, matches)
  if string.match then
      local command = 'git pull'
    text = run_bash(command)
-   local text = text..'Updates were applied GitHub\n@BeatBot_Team'
+   local text = text..'Updates 1.0.0 is @B1GAPBOT'
     return text
   end
 end
@@ -100,9 +100,15 @@ end
 return {
 	patterns = {
 	    "^#bot? (on)$",
+	    "^!bot? (on)$",
+	    "^/bot? (on)$",
             "^#bot? (off)$",
+            "^!bot? (off)$",
+            "^/bot? (off)$",
 	    "^#bot? (up)$",
-	    "^#bot (rl)$",
+	    "^!bot? (up)$",
+	    "^#bot (rl)$"
+	    
 	    },
 	run = run,
 	pre_process = pre_process
